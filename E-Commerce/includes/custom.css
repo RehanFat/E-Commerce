@@ -1,0 +1,65 @@
+/* Hero Section */
+.hero {
+  height: 100vh; /* full screen */
+  background: url('../assets/hero.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4); /* overlay gelap biar teks lebih jelas */
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  color: #ddd;
+}
+
+.btn-hero {
+  background: #ff0000;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-hero:hover {
+  background: #cc0000;
+  color: #fff;
+}
+
+.card {
+    border: none !important; /* hilangkan border */
+    border-radius: 12px !important; /* sudut membulat */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08),
+                0 2px 6px rgba(0, 0, 0, 0.05) !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12),
+                0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}
+
+
